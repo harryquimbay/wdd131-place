@@ -1,0 +1,28 @@
+/* width */
+@media (min-width: 48rem) {
+    :root{ --gap: 1rem; }
+
+    .container h1{ text-align:center; font-size:2rem; margin-top:1.2rem; }
+
+  /* 3 columns on medium/large screens */
+.album-grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+}
+.album-grid img{ height: 200px; }
+
+.container{ padding: 1.5rem; }
+
+  /* center main content */
+.site-header{ padding: 1rem 0; }
+.header-inner{ padding: 0 2rem; }
+.site-footer{ padding:1.2rem 0; }
+}
+
+/* Very large screens */
+@media (min-width: 80rem) {
+.album-grid{
+    grid-template-columns: repeat(4, 1fr);
+}
+.album-grid img{ height: 220px; }
+}
